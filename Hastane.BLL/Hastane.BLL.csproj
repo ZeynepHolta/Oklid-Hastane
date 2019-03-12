@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F94C7DF3-0BDC-474A-BCD0-48C162D0F5F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hastane.BLL</RootNamespace>
+    <AssemblyName>Hastane.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomExceptions.cs" />
+    <Compile Include="DepartmanBLL.cs" />
+    <Compile Include="DoktorBLL.cs" />
+    <Compile Include="EczaciBLL.cs" />
+    <Compile Include="GununTarihiBLL.cs" />
+    <Compile Include="HastaBLL.cs" />
+    <Compile Include="HastaneBLL.cs" />
+    <Compile Include="IlacBLL.cs" />
+    <Compile Include="Kullanicilar.cs" />
+    <Compile Include="LoginBLL.cs" />
+    <Compile Include="OrganizasyonBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandevuBLL.cs" />
+    <Compile Include="RandevuTahlilBLL.cs" />
+    <Compile Include="RandevuTeshisBLL.cs" />
+    <Compile Include="ReceteBLL.cs" />
+    <Compile Include="SeansBLL.cs" />
+    <Compile Include="SeansSaatleri.cs" />
+    <Compile Include="TahlilBLL.cs" />
+    <Compile Include="TeshisBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hastane.DAL\Hastane.DAL.csproj">
+      <Project>{a6895bc2-3e56-484c-870d-b797ccd3e59b}</Project>
+      <Name>Hastane.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hastane.DTO\Hastane.DTO.csproj">
+      <Project>{37e256f3-5edf-450f-954e-ee5da9da6efa}</Project>
+      <Name>Hastane.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hastane.Entities\Hastane.Entities.csproj">
+      <Project>{30b2188a-296c-4320-aaff-abf3fbdcd56e}</Project>
+      <Name>Hastane.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

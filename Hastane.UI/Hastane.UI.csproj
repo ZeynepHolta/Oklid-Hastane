@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C356C5EF-2097-4D34-B7C2-8F1805AC8688}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hastane.UI</RootNamespace>
+    <AssemblyName>Hastane.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktor.Designer.cs">
+      <DependentUpon>frmDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEczacı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEczacı.Designer.cs">
+      <DependentUpon>frmEczacı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaRandevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaRandevu.Designer.cs">
+      <DependentUpon>frmHastaRandevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaRandevuList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaRandevuList.Designer.cs">
+      <DependentUpon>frmHastaRandevuList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaUye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaUye.Designer.cs">
+      <DependentUpon>frmHastaUye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMuayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuayene.Designer.cs">
+      <DependentUpon>frmMuayene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorRecete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorRecete.Designer.cs">
+      <DependentUpon>frmDoktorRecete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDoktor.resx">
+      <DependentUpon>frmDoktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEczacı.resx">
+      <DependentUpon>frmEczacı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaRandevu.resx">
+      <DependentUpon>frmHastaRandevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaRandevuList.resx">
+      <DependentUpon>frmHastaRandevuList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaUye.resx">
+      <DependentUpon>frmHastaUye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuayene.resx">
+      <DependentUpon>frmMuayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorRecete.resx">
+      <DependentUpon>frmDoktorRecete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hastane.BLL\Hastane.BLL.csproj">
+      <Project>{f94c7df3-0bdc-474a-bcd0-48c162d0f5f9}</Project>
+      <Name>Hastane.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eczacı.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-appointment-new-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-bag-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prescription-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-Event-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove-event-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-pills-pot-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-group-new-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Categories-applications-education-science-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-list-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-bookmark-new-list-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-system-software-update-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Patient-Male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test-tubes-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear-Tick-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stethoscope-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-difference-background-haven-behavioral-hospital-frisco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Doctor-Male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

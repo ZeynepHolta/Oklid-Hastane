@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hastane.DAL", "Hastane.DAL\Hastane.DAL.csproj", "{A6895BC2-3E56-484C-870D-B797CCD3E59B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hastane.Entities", "Hastane.Entities\Hastane.Entities.csproj", "{30B2188A-296C-4320-AAFF-ABF3FBDCD56E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hastane.BLL", "Hastane.BLL\Hastane.BLL.csproj", "{F94C7DF3-0BDC-474A-BCD0-48C162D0F5F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hastane.DTO", "Hastane.DTO\Hastane.DTO.csproj", "{37E256F3-5EDF-450F-954E-EE5DA9DA6EFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hastane.UI.Winform", "Hastane.UI.Winform\Hastane.UI.Winform.csproj", "{1C8BE105-A011-474C-9609-BE6AE32F90B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6895BC2-3E56-484C-870D-B797CCD3E59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6895BC2-3E56-484C-870D-B797CCD3E59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6895BC2-3E56-484C-870D-B797CCD3E59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6895BC2-3E56-484C-870D-B797CCD3E59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30B2188A-296C-4320-AAFF-ABF3FBDCD56E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30B2188A-296C-4320-AAFF-ABF3FBDCD56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30B2188A-296C-4320-AAFF-ABF3FBDCD56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30B2188A-296C-4320-AAFF-ABF3FBDCD56E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94C7DF3-0BDC-474A-BCD0-48C162D0F5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94C7DF3-0BDC-474A-BCD0-48C162D0F5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94C7DF3-0BDC-474A-BCD0-48C162D0F5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94C7DF3-0BDC-474A-BCD0-48C162D0F5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E256F3-5EDF-450F-954E-EE5DA9DA6EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E256F3-5EDF-450F-954E-EE5DA9DA6EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E256F3-5EDF-450F-954E-EE5DA9DA6EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E256F3-5EDF-450F-954E-EE5DA9DA6EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8BE105-A011-474C-9609-BE6AE32F90B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8BE105-A011-474C-9609-BE6AE32F90B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8BE105-A011-474C-9609-BE6AE32F90B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8BE105-A011-474C-9609-BE6AE32F90B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E98AB58-19E8-48E1-9DF2-454D7B7226EE}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oklidhastane.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Hastane.DAL\\Hastane.DAL.csproj
+		SccProjectName1 = Hastane.DAL
+		SccLocalPath1 = Hastane.DAL
+		SccProjectUniqueName2 = Hastane.Entities\\Hastane.Entities.csproj
+		SccProjectName2 = Hastane.Entities
+		SccLocalPath2 = Hastane.Entities
+		SccProjectUniqueName3 = Hastane.BLL\\Hastane.BLL.csproj
+		SccProjectName3 = Hastane.BLL
+		SccLocalPath3 = Hastane.BLL
+		SccProjectUniqueName4 = Hastane.DTO\\Hastane.DTO.csproj
+		SccProjectName4 = Hastane.DTO
+		SccLocalPath4 = Hastane.DTO
+		SccProjectUniqueName5 = Hastane.UI.Winform\\Hastane.UI.Winform.csproj
+		SccProjectName5 = Hastane.UI.Winform
+		SccLocalPath5 = Hastane.UI.Winform
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C8BE105-A011-474C-9609-BE6AE32F90B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hastane.UI.Winform</RootNamespace>
+    <AssemblyName>Hastane.UI.Winform</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bugun.cs" />
+    <Compile Include="frmDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktor.Designer.cs">
+      <DependentUpon>frmDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorRecete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorRecete.Designer.cs">
+      <DependentUpon>frmDoktorRecete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEczacı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEczacı.Designer.cs">
+      <DependentUpon>frmEczacı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaRandevularım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaRandevularım.Designer.cs">
+      <DependentUpon>frmHastaRandevularım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaUyelik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaUyelik.Designer.cs">
+      <DependentUpon>frmHastaUyelik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMuayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuayene.Designer.cs">
+      <DependentUpon>frmMuayene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandevu.Designer.cs">
+      <DependentUpon>frmRandevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDoktor.resx">
+      <DependentUpon>frmDoktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorRecete.resx">
+      <DependentUpon>frmDoktorRecete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEczacı.resx">
+      <DependentUpon>frmEczacı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaRandevularım.resx">
+      <DependentUpon>frmHastaRandevularım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaUyelik.resx">
+      <DependentUpon>frmHastaUyelik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuayene.resx">
+      <DependentUpon>frmMuayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandevu.resx">
+      <DependentUpon>frmRandevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prescription-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-bookmark-new-list-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-pills-pot-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Categories-applications-education-science-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-Event-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove-event-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-system-software-update-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-group-new-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stethoscope-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test-tubes-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear-Tick-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-difference-background-haven-behavioral-hospital-frisco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Doctor-Male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Patient-Male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2757c088f0cdfe7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eczacı.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hastane.BLL\Hastane.BLL.csproj">
+      <Project>{f94c7df3-0bdc-474a-bcd0-48c162d0f5f9}</Project>
+      <Name>Hastane.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hastane.DTO\Hastane.DTO.csproj">
+      <Project>{37e256f3-5edf-450f-954e-ee5da9da6efa}</Project>
+      <Name>Hastane.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hastane.Entities\Hastane.Entities.csproj">
+      <Project>{30b2188a-296c-4320-aaff-abf3fbdcd56e}</Project>
+      <Name>Hastane.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-Event-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-appointment-new-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apotheke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eczane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-patient-computer-icons-hospital-patient-icon-drawing-5ab0a80606ecf5.1533942715215267900284.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\513ffab3035252039fe434a9c65aa092.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserBackGround.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ecza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uuseer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\serru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginana2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginana3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light-purple-backgrounds-wallpaper-cave-800x800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple-white-wallpapers-25285-1856120.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eczacı.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eczback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoecz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logbacgro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbgg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hap2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wlpusr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loghos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loggi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reç.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reçi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beyaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluewave-bkg-1980light-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doktor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Muayene.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\randevu.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
